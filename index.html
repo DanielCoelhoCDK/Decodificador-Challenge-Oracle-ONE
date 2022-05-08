@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Codificador/Decodificador de texto</title>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- <div class="logo">
+        <div class="left-logo"><a href="https://www.alura.com.br/"><img src="img/Vector.png" alt="logomarca da alura" width="40px"></a>
+            <div class="rigth-logo"><h1 id="titulo">Codificador / Decodificador</h1> </div>
+        </div>
+        
+    </div> -->
+    <header>
+
+        <!-- Icone da Alura com link para página de cursos alura -->
+        <a id="logo-alura" href="https://www.alura.com.br/" target="_blank" rel="noopener noreferrer">
+            <img src="img/Vector.png" alt="Logo da Alura" width="40px">
+        </a>
+
+        <h1 id="titulo">Codificador / Decodificador</h1>
+
+    </header>
+   
+       <!--CAMPO DE CODIFICAÇÃO-->
+    <div class="principal">
+            <div class="codificador">
+                <textarea name="" id="campo" placeholder="Digite seu texto aqui!"></textarea>
+                <div class="aviso">
+                    <img src="img/icone.png" alt="" width="12px" height="12px">
+                    <p><b>letras minúsculas e sem acento.</b> </p>
+                </div>
+                <div class="botoes">
+                    <button class="botao1"><b>Criptografar</b></button>
+                    <button class="botao2"><b>Descriptografar</b></button>
+                </div>
+            </div>
+            <!--CAMPO DE DECODIFICAÇÃO-->
+         <div id="decodificador">
+            <img class="icone" src="img/High quality products 1 1.svg" alt="">
+            <h2 id="none">Nenhuma mensagem encontrada</h2>
+            <textarea readonly name="" id="campo2" placeholder="Digite um texto que você deseja criptografar ou descriptografar"></textarea>
+            <!--DIV INICIALMENTE VAZIA, QUE IRÁ RECEBER O BOTÃO DE "COPIAR TEXTO", QUE SERÁ GERADO PELO JS-->
+            <div id="copy"></div>
+        </div>
+           
+    </div>
+         
+    <footer>
+        <section id="meus-creditos">
+
+            <!-- Div criada para colocar uma imagem de fundo, no caso minha foto -->
+            <div id="minha-imagem" alt="Foto do criador da página"></div>
+            <p>Desenvolvido por: Daniel_Coelho&reg;</p>
+
+        </section>
+
+        <section id="minhas-redes">
+
+            <p>Minhas redes sociais:</p>
+
+            <!-- Div´s para os icones das minhas redes sociais -->
+            <div id="icones-redes-sociais">
+
+                <!-- Icone do GitHub com link para o meu perfil -->
+                <a id="icone-github" href="https://github.com/DanielCoelhoCDK" target="_blank"
+                    rel="noopener noreferrer">
+                    <img class="icone-rede-social" src="img/GitHub.svg" alt="Icone do GitHub">
+                </a>
+
+                <!-- Icone do Linkedin com link para o meu perfil -->
+                <a id="icone-linkedin" href="https://www.linkedin.com/in/daniel-coelho-1b161979/"
+                    target="_blank" rel="noopener noreferrer">
+                    <img class="icone-rede-social" src="img/Linkedin.svg" alt="Icone do LinkedIn">
+                </a>
+
+                <!-- Icone do Instagram com link para o meu perfil -->
+                <a id="icone-instagram" href="https://www.instagram.com/danielcoelhocdk/" target="_blank"
+                    rel="noopener noreferrer">
+                    <img class="icone-rede-social" src="img/Instagram.svg" alt="Icone do instagram">
+                </a>
+
+            </div>
+        </section>
+    </footer>
+    
+  
+</body>
+</html>
+

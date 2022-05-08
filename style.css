@@ -1,0 +1,413 @@
+/* Importando as fontes e mostrando como elas devem ser utilizadas */
+
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Rubik+Glitch&display=swap');
+/* font-family: 'Press Start 2P', cursive;
+font-family: 'Rubik Glitch', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+/* font-family: 'Rubik', sans-serif; */
+
+body {
+   margin: 0;
+   background-color: #AFEEEE;
+}
+/*ALTERA AS PROPRIEDADES DA IMAGEM DA LOGOMARCA*/
+header {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px auto;
+    box-sizing: border-box;
+}
+
+#logo-alura {
+    position: absolute;
+    left: 50px;
+}
+
+#titulo {
+    font-size: 40px;
+    font-family: 'Rubik Glitch', cursive;
+    text-align: center;
+    color: #0A3871;
+}
+
+.principal {
+
+    background-color: #AFEEEE;
+    justify-content:center;
+    align-items: center;
+    display: flex;
+    height: 90vh;
+    width: 100vw;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/*ALTERA AS PROPRIEDADES DOS CAMPOS DE TEXTO*/
+#campo::placeholder {
+    color: #ADD8E6;
+    padding-top: 10px;
+    padding-left: 10px;
+    font-size: 20px;
+    
+    
+}
+
+textarea {
+    color: #ADD8E6;
+    border-radius: 20px;
+    border: none;
+    background-color: #0A3871;
+    width: 100%;
+    height: 86%;
+    padding-left: 20px;
+    padding-top: 20px;
+    font-size: 20px;
+    font-weight: 30;
+    align-items: center;
+    
+}
+
+#campo {
+    box-shadow: 5px 5px 5px #000000;
+}
+
+#campo2 {
+    background-color: white;
+    color: #0A3871;
+    font-size: 32px;
+}
+
+#campo2::placeholder {
+    font-size: 30px;
+    text-align: center;
+    color: #495057;
+}
+/*CAMPO DE TEXTO PARA A CODIFICAÇÃO*/
+
+h2 {
+    color: #0A3871;
+}
+
+#decodificador{
+    box-shadow: 5px 5px 5px #000000;
+}
+
+.codificador {
+    box-sizing: border-box;
+    width: 50vw;
+    height: 80vh;
+    margin: 50px 0 0 0px;
+    justify-content: flex-start;
+    padding: 10px 50px;
+}
+
+.aviso {
+    display: flex;
+    flex-direction: row;
+    margin: 2% 0 10px 0;
+    font-size: 10.5px;
+    align-items: center;
+}
+
+.aviso p {
+    color: #495057;
+    font-size: 15px;
+    margin: 0 0 0 5px;
+}
+
+.botoes {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.botao2 {
+    display: flex;
+    background-color: #fff;
+    color: 	#0A3871;
+    border-radius: 24px;
+    width: 230px;
+    height: 55px;
+    border: #0A3871 solid 2px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 5px 5px 5px #000000;
+    transition: 0.3s;
+}
+.botao1 {
+    background-color: #0A3871;
+    color: 	#ADD8E6;
+    display: flex;
+    border-radius: 24px;
+    width: 230px;
+    height: 55px;
+    border: #495057 solid 2px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 5px 5px 5px #000000;
+    transition: 0.3s;
+}
+
+
+/*BOTÃO DE "COPIAR TEXTO" QUE SERÁ CRIADO POSTERIORMENTE PELO JS*/
+.botao3 {
+    background-color: #0A3871;
+    color: 	#ADD8E6;
+    display: flex;
+    border-radius: 24px;
+    width: 230px;
+    height: 55px;
+    border: #495057 solid 2px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 5px 5px 5px #000000;
+    transition: 0.3s;
+}
+
+button {
+    width: 200px;
+    height: 50px;
+    border-radius: 15px;
+    background-color: #0F4C81;
+    border: none;
+    color: #CAE8D5;
+    font-size: 20px;
+    box-shadow: 5px 5px 5px #000000;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: translate(-3px, -3px);
+    box-shadow: 10px 10px 10px #000000;
+    filter: saturate(150%);
+    
+}
+
+button:active {
+    transform: scale(0.9);
+    box-shadow: 1px 1px 1px #000000;
+}
+
+button:disabled {
+    display: none;
+}
+
+/*CAMPO DE DECODIFICAÇÃO*/
+#decodificador {
+    background-color: white;
+    border-radius: 32px;
+    width: 30%;
+    height: 87%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px 50px;
+    box-sizing: border-box;
+    margin: 50px 0 0 20px;
+    border: #0A3871 solid 2px;
+}
+
+.icone {
+    width: 300px;
+}
+
+#none {
+    font-size: 25px;
+}
+
+/*FOOTER*/
+
+/* Criando estilos do rodapé da página */
+
+footer {
+    width: 100%;
+    height: 280px;
+    font-size: 17px;
+    color: #ffffff;
+    text-align: center;
+    background-color: #0A3871;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#minha-imagem {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    background-color: #cccccc;
+    /* Utilizando minha foto como backgorund cover, para a imagem não ficar muito distorcida */
+    background-image: url('./img/coelho.jpeg');
+    background-size: cover;
+}
+
+#meus-creditos {
+    margin-bottom: 10px;
+}
+
+#icones-redes-sociais {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    gap: 25px;
+}
+
+.icone-rede-social {
+    transition: 0.3s;
+}
+
+.icone-rede-social:hover {
+    transform: scale(1.1);
+}
+
+/*MEDIA QUERIES*/
+
+@media (max-width: 830px) /*TABLET*/ {
+    body {
+        flex-direction: column;
+    }
+
+
+    #titulo {
+        font-size: x-large;
+        font-family: 'Rubik Glitch', cursive;
+        text-align: center;
+        color: #0A3871;
+    }
+    
+    .logo {
+        margin: 10px 0 5px 30px;
+    }
+
+    .icone {
+        width:25%;
+    }
+
+    .codificador {
+        margin-bottom: 20px;
+        padding: 0;
+        width: 100%;
+        margin: 2px 0 7px 3px;
+    }
+
+    .principal {
+        justify-content: center;
+        align-items: center;
+
+        flex-direction: column;
+        width: 90%;
+        margin: 0 20px;
+    }
+    .aviso {
+        margin: 0 0 10px 0;
+    }
+
+    .botao {
+        width: 45%;
+    }
+
+    .botoes {
+        margin-bottom: 25px;
+    }
+
+    #decodificador {
+        width: 92vw;
+        margin-bottom: 10px;
+        margin-right: 7px;
+    }
+
+    h2#none {
+        font-size: 20px;
+        margin-bottom: 50px;
+    }
+    #campo2 {
+        font-size: 20px;
+        text-align: center;
+        height: 20vh;
+    }
+    #campo2::placeholder {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .botao3 {
+        margin-top: 10px;
+        width: 85vw;
+    }
+}
+
+@media (max-width: 530px) /*CELULAR*/ {
+    body {
+        flex-direction: column;
+    }
+
+    header {
+        width: 100%;
+        padding: 40px;
+        margin: 10px auto;
+        
+    }
+
+    .botoes {
+        flex-direction: column;
+        margin: 10px;
+        height: 125px;
+    }
+
+    #titulo {
+        font-size: 20px;
+        font-family: 'Rubik Glitch', cursive;
+        text-align: center;
+        color: #0A3871;
+    }
+
+    #logo-alura {
+       display: none;
+    }
+
+    .botao {
+        width: 100%;
+    }
+
+    .logo {
+        margin: 20px 0 90px 10px;
+    }
+
+    .principal {
+        margin: 0 10px;
+    }
+
+    #decodificador {
+        margin: 135px 10px;
+    }
+
+    .botao3 {
+        width: 85vw;
+    }
+
+    #none {
+        font-size: 20px;
+    }
+
+    #campo2 {
+        font-size: 18px;
+        height: 150px;
+    }
+    #campo2::placeholder {
+        font-size: 18px;
+    }
+}
