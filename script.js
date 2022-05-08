@@ -33,6 +33,7 @@ function decodificar() {
     if (input.value.length == 0) {
         alert('Digite algum texto no campo abaixo');
         input.focus();
+        
     } else {
         // LIMPA O CAMPO TODA A VEZ QUE O BOTÃO É CLICADO
         document.getElementById('none').innerHTML = '';
@@ -47,7 +48,9 @@ function decodificar() {
         txt = txt.replace(/ufat/igm, 'u');
     
         document.getElementById('campo2').innerHTML = `${txt}`;
+        input.value='';
         
+
         // CRIA O BOTÃO DE COPIAR TEXTO QUANDO A FUNÇÃO "CODIFICAR()" É CHAMADA
         document.getElementById('copy').innerHTML = '<button class="botao3" onclick="copy()"><b>Copiar</b></button>';
     }
